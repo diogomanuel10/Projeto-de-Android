@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">ClassTicket</string>
+
+    <!-- Strings related to login -->
+    <string name="msg_welcome">Welcome to</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Register</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="authentication_success">You are signed in</string>
+    <string name="authentication_failed">The authentication failed</string>
+
+    <!--Strings related to new account-->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_surname">Surname</string>
+    <string name="prompt_avatar">Photo URL</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="prompt_confirm_email">Confirm Email</string>
+    <string name="label_status">Status</string>
+    <string name="select_status_1">Professor</string>
+    <string name="select_status_2">Student</string>
+    <string name="action_create_account">Create account</string>
+    <string name="msg_create">Create a new account</string>
+
+    <!-- Strings related to general content-->
+    <string name="action_cancel">Cancel</string>
+    <string name="action_confirm">Confirm</string>
+
+    <!-- Strings related to classes-->
+    <string name="label_year">Year</string>
+    <string name="label_notes">Notes</string>
+    <string name="label_tickets">Tickets</string>
+    <string name="warning_notes">There are no Notes available at the moment.\nTry again later</string>
+    <string name="warning_tickets">There are no Tickets available at the moment.\nTry again later</string>
+
+    <!-- Strings related to profile-->
+    <string name="default_user">Default User</string>
+    <string name="change_pass">Change Password</string>
+    <string name="prompt_new_pass">New Password</string>
+    <string name="prompt_old_pass">Insert current Password</string>
+    <string name="save_profile">Save changes</string>
+
+    <!-- Strings related to Create a Ticket-->
+    <string name="label_subject">Subject :</string>
+    <string name="prompt_subject">Subject here</string>
+    <string name="label_question">Question :</string>
+    <string name="action_send_ticket">Create Ticket</string>
+    <string name="prompt_question">Your question.</string>
+    <string name="prompt_public">Private Message ?</string>
+
+    <!-- Strings related to Create a Note-->
+    <string name="label_title">Title :</string>
+    <string name="prompt_title">Title here</string>
+    <string name="label_Message">Message :</string>
+    <string name="action_send_note">Create Note</string>
+    <string name="view_note">Note</string>
+    <string name="prompt_message">Enter a short message.</string>
+
+    <!-- Strings related to toolbar-->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="navigation_header">Navigation Header</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- Menu Items -->
+    <string name="title_home">Disciplines</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_my_tickets">My Tickets</string>
+    <string name="title_my_notes">My Notes</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_logout">Log out</string>
+
+    <!-- Toasts & Other Messages -->
+    <string name="load_profile">User profile Loaded succesfuly</string>
+    <string name="select_img">Select an Image</string>
+    <string name="upload_progress">Uploading...</string>
+    <string name="upload_success">Photo uploaded</string>
+    <string name="upload_failed">Upload failed</string>
+    <string name="upload_sent">Uploaded</string>
+    <string name="authenticating">Authenticating...</string>
+    <string name="password_failed_2">Authentication Failed. Your password was not updated</string>
+    <string name="password_success">Password Succesfuly updated</string>
+    <string name="password_failed">Something went wrong. Your password was not updated. Please try again</string>
+    <string name="email_failed_2">Authentication Failed. Your Email was not updated</string>
+    <string name="email_success">Email Succesfuly updated</string>
+    <string name="email_failed">Something went wrong. Your Email was not updated. Please try again</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Settings for Home-Student -->
+    <string name="pref_header_home">Home settings</string>
+    <string name="home_pref_title">Home Screen display on Startup</string>
+    <string-array name="startup_screen_titles">
+        <item>All Disciplines</item>
+        <item>Favorites</item>
+        <item>My Tickets</item>
+    </string-array>
+    <string-array name="startup_screen_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Settings for Note-Delete-Professor -->
+    <string name="pref_header_delete_note">My Notes settings</string>
+    <string name="home_pref_delete_note_title">Delete Notes after :</string>
+    <string-array name="note_date_array">
+        <item>5 days</item>
+        <item>10 days</item>
+        <item>20 days</item>
+        <item>30 days</item>
+    </string-array>
+    <string-array name="note_date_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- Settings for Tickets Student-->
+    <string name="pref_header_tickets">Tickets settings</string>
+    <string name="pref_tickets_summary">Solved Tickets</string>
+    <string name="pref_tickets_title">Only show :</string>
+
+    <!-- Settings for Tickets Professor-->
+    <string name="pref_tickets_summary_professor">Unsolved Tickets</string>
+
+    <!-- Settings for Notes Student -->
+    <string name="pref_header_notes">Notes settings</string>
+    <string name="pref_notes_summary">Unread notes</string>
+    <string name="pref_notes_title">Only show :</string>
+
+
+</resources>

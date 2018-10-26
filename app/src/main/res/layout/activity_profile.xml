@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.student.pro.prostudent.Activities.ProfileActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/profile_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/setup_image_header"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/default_icon"
+            app:civ_border_color="@android:color/transparent"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_bar" />
+
+        <TextView
+            android:id="@+id/profile_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/default_user"
+            android:textColor="@color/colorPrimaryLightTransparent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setup_image_header" />
+
+        <ScrollView
+            android:id="@+id/scrollView4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/profile_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_uname">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/but_email"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_action_edit"
+                    app:layout_constraintBottom_toBottomOf="@+id/switch_email"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/switch_email" />
+
+                <TextView
+                    android:id="@+id/tag_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/prompt_email"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ViewSwitcher
+                    android:id="@+id/switch_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/but_email"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tag_email">
+
+                    <TextView
+                        android:id="@+id/profile_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="@string/prompt_email"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="@color/colorSecondaryDark"
+                        android:textSize="16sp"
+                        tools:layout_editor_absoluteY="53dp" />
+
+                    <EditText
+                        android:id="@+id/profile_email2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimaryLightTransparent"
+
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="@string/prompt_email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textColorHint="@color/colorSecondaryDarkTransparent"
+                        android:textSize="16sp"
+                        tools:layout_editor_absoluteX="46dp"
+                        tools:layout_editor_absoluteY="307dp" />
+
+                </ViewSwitcher>
+
+                <TextView
+                    android:id="@+id/tag_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/prompt_username"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/switch_email" />
+
+                <Button
+                    android:id="@+id/but_user"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_action_edit"
+                    app:layout_constraintBottom_toBottomOf="@+id/switch_username"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/switch_username" />
+
+                <ViewSwitcher
+                    android:id="@+id/switch_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/but_user"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tag_username">
+
+                    <TextView
+                        android:id="@+id/profile_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="@string/prompt_username"
+                        android:inputType="text"
+                        android:textColorHint="@color/colorSecondaryDark"
+                        android:textSize="16sp"
+                        tools:layout_editor_absoluteY="150dp" />
+
+                    <EditText
+                        android:id="@+id/profile_username2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimaryLightTransparent"
+
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="@string/prompt_username"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textColorHint="@color/colorSecondaryDarkTransparent"
+                        android:textSize="16sp"
+                        tools:layout_editor_absoluteY="150dp" />
+
+                </ViewSwitcher>
+
+                <TextView
+                    android:id="@+id/tag_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/prompt_name"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/switch_username" />
+
+                <Button
+                    android:id="@+id/but_name"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_action_edit"
+                    app:layout_constraintBottom_toBottomOf="@+id/switch_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/switch_name" />
+
+                <ViewSwitcher
+                    android:id="@+id/switch_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/but_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tag_name">
+
+                    <TextView
+                        android:id="@+id/profile_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="@string/prompt_name"
+                        android:inputType="none|textPersonName"
+                        android:textColorHint="@color/colorSecondaryDark"
+                        android:textSize="16sp"
+                        tools:layout_editor_absoluteY="248dp" />
+
+                    <EditText
+                        android:id="@+id/profile_name2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimaryLightTransparent"
+
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="@string/prompt_name"
+                        android:inputType="none|textPersonName"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textColorHint="@color/colorSecondaryDarkTransparent"
+                        android:textSize="16sp"
+                        tools:layout_editor_absoluteY="248dp" />
+                </ViewSwitcher>
+
+                <TextView
+                    android:id="@+id/tag_surname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/prompt_surname"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/switch_name" />
+
+                <Button
+                    android:id="@+id/but_surname"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_action_edit"
+                    app:layout_constraintBottom_toBottomOf="@+id/switch_surname"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/switch_surname" />
+
+                <ViewSwitcher
+                    android:id="@+id/switch_surname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/but_surname"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tag_surname">
+
+                    <TextView
+                        android:id="@+id/profile_surname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="@string/prompt_surname"
+                        android:inputType="none|textPersonName"
+                        android:textColorHint="@color/colorSecondaryDark"
+                        android:textSize="16sp"
+                        tools:layout_editor_absoluteY="345dp" />
+
+                    <EditText
+                        android:id="@+id/profile_surname2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:backgroundTint="@color/colorPrimaryLightTransparent"
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="@string/prompt_surname"
+                        android:inputType="none|textPersonName"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textColorHint="@color/colorSecondaryDarkTransparent"
+                        android:textSize="16sp"
+                        tools:layout_editor_absoluteY="345dp" />
+                </ViewSwitcher>
+
+                <TextView
+                    android:id="@+id/tag-password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/change_pass"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/switch_surname" />
+
+                <EditText
+                    android:id="@+id/profile_password"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/colorPrimaryLightTransparent"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/prompt_new_pass"
+                    android:inputType="none|textPassword"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textColorHint="@color/colorPrimaryLightTransparent"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/switch_surname"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tag-password" />
+
+                <EditText
+                    android:id="@+id/profile_confirm_pass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/colorPrimaryLightTransparent"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/prompt_confirm_password"
+                    android:inputType="none|textPassword"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textColorHint="@color/colorPrimaryLightTransparent"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/profile_password"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_password" />
+
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/profile_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/roundbuttonaccent"
+            android:text="@string/save_profile"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            layout="@layout/navigation_action"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

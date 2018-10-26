@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">ClassTicket</string>
+
+    <!-- Strings related to login -->
+    <string name="msg_welcome">Bem-vindo a</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Palavra Passe</string>
+    <string name="action_sign_in">Iniciar Sessão</string>
+    <string name="action_register">Regista-te</string>
+    <string name="error_invalid_email">Este endereço de e-mail é inválido</string>
+    <string name="error_invalid_password">Esta palavra-passe é demasiado pequena</string>
+    <string name="error_incorrect_password">Esta palavra-passe está errada</string>
+    <string name="error_field_required">Este campo é de preenchimento obrigatório</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="authentication_success">Iniciaste Sessão</string>
+    <string name="authentication_failed">A Autenticação falhou</string>
+
+    <!--Strings related to new account-->
+    <string name="prompt_username">Utilizador</string>
+    <string name="prompt_name">Nome</string>
+    <string name="prompt_surname">Apelido</string>
+    <string name="prompt_avatar">URL da foto</string>
+    <string name="prompt_confirm_password">Confirmar Palavra Passe</string>
+    <string name="prompt_confirm_email">Confirmar Email</string>
+    <string name="label_status">Estado</string>
+    <string name="select_status_1">Professor</string>
+    <string name="select_status_2">Estudante</string>
+    <string name="action_create_account">Criar Conta</string>
+    <string name="msg_create">Criar uma nova Conta</string>
+
+    <!-- Strings related to general content-->
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_confirm">Confirmar</string>
+
+    <!-- Strings related to classes-->
+    <string name="label_year">Ano</string>
+    <string name="label_notes">Notas</string>
+    <string name="label_tickets">Tickets</string>
+    <string name="warning_notes">Não há Notas disponivéis neste momento .\nTenta Novamente mais logo</string>
+    <string name="warning_tickets">Não há Tickets disponivéis neste momento .\nTenta Novamente mais logo</string>
+
+    <!-- Strings related to profile-->
+    <string name="default_user">Default User</string>
+    <string name="change_pass">Mudar Palavra Passe</string>
+    <string name="prompt_new_pass">Nova Palavra Passe</string>
+    <string name="prompt_old_pass">Insere a Palavra Passe atual</string>
+    <string name="save_profile">Guardar Alterações</string>
+
+    <!-- Strings related to Create a Ticket-->
+    <string name="label_subject">Assunto :</string>
+    <string name="prompt_subject">O seu Assunto</string>
+    <string name="label_question">Dúvida :</string>
+    <string name="action_send_ticket">Criar Ticket</string>
+    <string name="prompt_question">A tua dúvida.</string>
+    <string name="prompt_public">Mensagem Privada ?</string>
+
+    <!-- Strings related to Create a Note-->
+    <string name="label_title">Título :</string>
+    <string name="prompt_title">Título aqui</string>
+    <string name="label_Message">Mensagem :</string>
+    <string name="action_send_note">Criar Nota</string>
+    <string name="view_note">Nota</string>
+    <string name="prompt_message">Insere uma pequena mensagem.</string>
+
+    <!-- Strings related to toolbar-->
+    <string name="open">Abrir</string>
+    <string name="close">Fechar</string>
+    <string name="navigation_header">Cabeçalho de Navegação</string>
+    <string name="navigation_drawer_open">Abri gaveta de navegação</string>
+    <string name="navigation_drawer_close">Fechar gaveta de navegação</string>
+    <!-- Menu Items -->
+    <string name="title_home">Disciplinas</string>
+    <string name="title_favorites">Favoritos</string>
+    <string name="title_my_tickets">Meus Tickets</string>
+    <string name="title_my_notes">Minhas Notas</string>
+    <string name="title_profile">Perfil</string>
+    <string name="title_settings">Definições</string>
+    <string name="title_logout">Terminar Sessão</string>
+
+    <!-- Toasts & Other Messages -->
+    <string name="load_profile">User profile Loaded succesfuly</string>
+    <string name="select_img">Escolhe uma Imagem</string>
+    <string name="upload_progress">Carregando...</string>
+    <string name="upload_success">Foto carregada</string>
+    <string name="upload_failed">O Carregamento Falhou</string>
+    <string name="upload_sent">Carregado</string>
+    <string name="authenticating">Autenticando...</string>
+    <string name="password_failed_2">Autenticação Falhou. A tua palavra passe não foi atualizada</string>
+    <string name="password_success">Palavra Passe foi atualizada com sucesso</string>
+    <string name="password_failed">Algo correu mal. A tua palavra passe não foi atualizada. Tenta outra vez mais logo</string>
+    <string name="email_failed_2">Autenticação Falhou. O teu Email não foi atualizado</string>
+    <string name="email_success">O Email foi atualizado com sucesso</string>
+    <string name="email_failed">Algo correu mal. O teu Email não foi atualizado. Tenta outra vez mais logo</string>
+    <string name="title_activity_settings">Definições</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Settings for Home-Student -->
+    <string name="pref_header_home">Definição da Página Principal</string>
+    <string name="home_pref_title">Escolher a Página Principal</string>
+    <string-array name="startup_screen_titles">
+        <item>Todas as Disciplinas</item>
+        <item>Favoritos</item>
+        <item>Meus Tickets</item>
+    </string-array>
+    <string-array name="startup_screen_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Settings for Note-Delete-Professor -->
+    <string name="pref_header_delete_note">Definições das minhas notas</string>
+    <string name="home_pref_delete_note_title">Apaga as notas a seguir:</string>
+    <string-array name="note_date_array">
+        <item>5 dias</item>
+        <item>10 dias</item>
+        <item>20 dias</item>
+        <item>30 dias</item>
+    </string-array>
+    <string-array name="note_date_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- Settings for Tickets Student-->
+    <string name="pref_header_tickets">Definições dos Tickets</string>
+    <string name="pref_tickets_summary">Tickets Resolvidos</string>
+    <string name="pref_tickets_title">Só Mostrar:</string>
+
+    <!-- Settings for Tickets Professor-->
+    <string name="pref_tickets_summary_professor">Tickets não resolvidos</string>
+
+    <!-- Settings for Notes Student -->
+    <string name="pref_header_notes">Definições das notas</string>
+    <string name="pref_notes_summary">Notas por ler</string>
+    <string name="pref_notes_title">Só mostrar :</string>
+
+
+</resources>

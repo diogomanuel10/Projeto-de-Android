@@ -1,0 +1,9 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <SwitchPreference
+       android:defaultValue="false"
+       android:key="tickets_solved_professor"
+       android:summary="@string/pref_tickets_summary_professor"
+       android:title="@string/pref_tickets_title" />
+
+</PreferenceScreen>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "96969982370",
+    "firebase_url": "https://pro-student-d2bfa.firebaseio.com",
+    "project_id": "pro-student-d2bfa",
+    "storage_bucket": "pro-student-d2bfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96969982370:android:d9b5fc8806c10236",
+        "android_client_info": {
+          "package_name": "com.student.pro.prostudent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96969982370-72poq78iq9icfk376a39riloj0c6crlt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.student.pro.prostudent",
+            "certificate_hash": "c1f5b4638331fc0b32b838aebfad26295c08b138"
+          }
+        },
+        {
+          "client_id": "96969982370-iu4ucltvptnv6bjqikvb8av3pv36at4u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP_ZvKs6OYXnqNPuDP8FthXTjTp7klH_o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96969982370-iu4ucltvptnv6bjqikvb8av3pv36at4u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
